@@ -1,0 +1,60 @@
+{
+	"name": "discordbot-template-ts",
+	"version": "0.0.1",
+	"description": "Template for creating your own bot based on discord-js written in Typescript",
+	"main": "dist/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "ts-node-dev --respawn src/index.ts | pino-pretty -c -l -t dd.mm.yyyy -i hostname,pid",
+		"start": "node dist/index.js | pino-pretty -c -l -t dd.mm.yyyy -i hostname,pid",
+		"build": "npx tsc && node dist/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/GamesTwoLife/DiscordBot-TemplateTS.git"
+	},
+	"keywords": [
+		"mongodb",
+		"mongoose",
+		"typescript",
+		"discord",
+		"discordjs",
+		"discord-bot",
+		"discord-js",
+		"discord-bot-template",
+		"bot-template",
+		"ts-bot-template",
+		"discord-handler",
+		"discordjs-v14",
+		"discord-js-handler-v14",
+		"discord-ts-handler-v14",
+		"discord-v14",
+		"discord-v14-ts"
+	],
+	"author": "GamesTwoLife",
+	"contributors": [
+		"GamesTwoLife <vova08059910@gmail.com>"
+	],
+	"license": "Apache-2.0",
+	"bugs": {
+		"url": "https://github.com/GamesTwoLife/DiscordBot-TemplateTS/issues"
+	},
+	"homepage": "https://github.com/GamesTwoLife/DiscordBot-TemplateTS#readme",
+	"dependencies": {
+		"colors": "^1.4.0",
+		"discord.js": "^14.15.2",
+		"i18next": "^23.11.5",
+		"md5": "^2.3.0",
+		"mongoose": "^8.4.1",
+		"pino": "^7.0.0-rc.9",
+		"ts-node-dev": "^2.0.0",
+		"typescript": "^5.4.5",
+		"uuid": "^9.0.1"
+	},
+	"devDependencies": {
+		"@types/node": "^20.13.0",
+		"@types/ws": "^8.5.10",
+		"nodemon": "^3.1.2",
+		"pino-pretty": "^11.1.0"
+	}
+}

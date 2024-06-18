@@ -1,0 +1,33 @@
+# Packages
+node_modules
+
+# Env
+.env
+
+# Dist
+dist
+
+# Miscellaneous
+.tmp
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea
+.DS_Store
+tsconfig.tsbuildinfo
+coverage
+out
+package.tgz
+tsup.config.bundled*
+package-lock.json
+lavalink
+
+# Deno
+deno.lock
+
+# Bun
+bun.lockb
+
+# Cache
+.prettiercache
+.eslintcache
