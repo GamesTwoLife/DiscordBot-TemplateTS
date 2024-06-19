@@ -21,6 +21,7 @@ package.tgz
 tsup.config.bundled*
 package-lock.json
 lavalink
+config-test.ts
 
 # Deno
 deno.lock
