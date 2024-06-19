@@ -23,18 +23,18 @@ Discord Bot Template TS — це шаблон бота з відкритим в�
 
 #### • **Динамічний обробник подій:**
 
-- Усі події зберігаються в в папках папці [events](https://github.com/GamesTwoLife/DiscordBot-Template/blob/master/src/events/). Вам не потрібно використовувати `client.on()` в основному файлі
-- Використовуючи простий клас [`Event`](https://github.com/GamesTwoLife/DiscordBot-Template/blob/master/src/lib/Event), ви легко можете створювати будь-яку кількість подій
+- Усі події зберігаються в в папках папці [events](https://github.com/GamesTwoLife/DiscordBot-TemplateTS/blob/master/src/events/). Вам не потрібно використовувати `client.on()` в основному файлі
+- Використовуючи простий клас [`Event`](https://github.com/GamesTwoLife/DiscordBot-TemplateTS/blob/master/src/lib/Event), ви легко можете створювати будь-яку кількість подій
 
 #### • **Динамічний обробник команд:**
 
-- Усі команди зберагіються у папках папці [commands](https://github.com/GamesTwoLife/DiscordBot-Template/blob/master/src/commands/).
+- Усі команди зберагіються у папках папці [commands](https://github.com/GamesTwoLife/DiscordBot-TemplateTS/blob/master/src/commands/).
 - Команди можуть отримувати об'єкт [`ChatInputCommandInteraction`](https://discord.js.org/docs/packages/discord.js/14.15.3/ChatInputCommandInteraction:Class) для слеш команд або [`UserContextMenuCommandInteraction`](https://discord.js.org/docs/packages/discord.js/14.15.3/UserContextMenuCommandInteraction:Class) для команд контекстного меню користувача або [`MessageContextMenuCommandInteraction`](https://discord.js.org/docs/packages/discord.js/14.15.3/MessageContextMenuCommandInteraction:Class) для команд контекстного меню повідомлення
 - **ВАЖЛИВО:** У кожної команди є параметр `devGuildOnly` який за замовченням є `true` тобто усі команди реєструються лише в 1 гільдії, тому як закінчите розробку свого прекрасного бота, не забудьте змінити цей параметр на `false` для тих команд які ви бажаєте розгорнути на всіх серверах бота
 
 #### • **Динамічний обробник компонентів (кнопки, меню, модальні вікна, автозаповнення):**
 
-- Легко обробляйте вхідні запити компонетів з папки [components](https://github.com/GamesTwoLife/DiscordBot-Template/blob/master/src/components/)
+- Легко обробляйте вхідні запити компонетів з папки [components](https://github.com/GamesTwoLife/DiscordBot-TemplateTS/blob/master/src/components/)
 - Компонентів класифікуютсья в іменованих папках а саме `autocomplete`, `buttons`, `modals`, `selectmenu` в цих папках категорії і вже в них ваші файли цих компонентів, все дуже просто
 
 #### • **Широкі можливості налаштування:**
@@ -53,7 +53,7 @@ npm install
 
 ## Налаштуйте
 
-- Налаштуйте файл [`config.ts`](https://github.com/GamesTwoLife/DiscordBot-Template/blob/master/src/config.ts) відповідно до ваших потреб!
+- Налаштуйте файл [`config.ts`](https://github.com/GamesTwoLife/DiscordBot-TemplateTS/blob/master/src/config.ts) відповідно до ваших потреб!
 
 ## Запуск
 
