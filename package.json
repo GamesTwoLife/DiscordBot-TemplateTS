@@ -1,13 +1,13 @@
 {
 	"name": "discordbot-template-ts",
-	"version": "0.0.1",
+	"version": "0.6.5",
 	"description": "Template for creating your own bot based on discord-js written in Typescript",
 	"main": "dist/index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"dev": "ts-node-dev --respawn src/index.ts | pino-pretty -c -l -t dd.mm.yyyy -i hostname,pid",
 		"start": "node dist/index.js | pino-pretty -c -l -t dd.mm.yyyy -i hostname,pid",
-		"build": "npx tsc && node dist/index.js"
+		"build": "npx tsc && npm run start"
 	},
 	"repository": {
 		"type": "git",
@@ -22,7 +22,10 @@
 		"discord-bot",
 		"discord-js",
 		"discord-bot-template",
+		"discord-bot-templatets",
+		"discord-bot-template-ts",
 		"bot-template",
+		"bot-template-ts",
 		"ts-bot-template",
 		"discord-handler",
 		"discordjs-v14",
@@ -42,7 +45,7 @@
 	"homepage": "https://github.com/GamesTwoLife/DiscordBot-TemplateTS#readme",
 	"dependencies": {
 		"colors": "^1.4.0",
-		"discord.js": "^14.15.2",
+		"discord.js": "^14.15.3",
 		"i18next": "^23.11.5",
 		"md5": "^2.3.0",
 		"mongoose": "^8.4.1",

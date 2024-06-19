@@ -1,0 +1,52 @@
+{
+	"samples": {
+		"sample": {
+			"name": "sample",
+			"description": "An example of a commands with different components.",
+			"autocomplete": {
+				"description": "An example of an autocomplete command.",
+				"options": {
+					"input": {
+						"description": "Choose an option"
+					}
+				}
+			},
+			"button": {
+				"description": "An example of a command with buttons."
+			},
+			"menu": {
+				"description": "An example of a command from the menu."
+			},
+			"modal": {
+				"description": "An example of a command with a modal window."
+			},
+			"pagination": {
+				"description": "An example of a command with a Pagination Button.",
+				"pageStrings": [
+					"Cats are the best :)",
+					"Dogs are the best :)",
+					"Ukraine is above all!",
+					"Glory to Ukraine! Glory to the Heroes!",
+					"Cool bot template"
+				],
+				"footer": "Page {{currentPage}}/{{totalPages}}"
+			},
+			"buttonwrapper": {
+				"description": "An example of a command with a Button Wrapper.",
+				"content": "Click on the buttons below:",
+				"say_hello": "Click me",
+				"cool_template": "The best Discord bot template"
+			},
+			"info": {
+				"description": "Information about the system."
+			}
+		},
+		"message-sample": {
+			"name": "Message Sample"
+		},
+		"user-sample": {
+			"name": "User Sample"
+		}
+	}
+}
+

@@ -1,0 +1,18 @@
+{
+	"interactionError": "❌ Помилка взаємодії",
+	"unknownInteraction": "Ця взаємодія невідома або припинила своє існування.",
+	"expiredInteraction": "Час цієї взаємодії минув. За необхідності викличте пов'язану з нею команду ще раз.",
+	"buttonOnlyDeveloper": "Ця кнопка тільки для розробників бота.",
+	"buttonOnlyDevGuild": "Ця кнопка не доступна на цьому сервері.",
+	"commandNoLongerExists": "Ця команда більше не існує або виникла дуже непередбачувана ситуація.",
+	"commandOnlyDeveloper": "Ця команда тільки для розробників бота.",
+	"commandOnlyDevGuild": "Ця команда не доступна на цьому сервері.",
+	"menuOnlyDeveloper": "Це меню тільки для розробників бота.",
+	"menuOnlyDevGuild": "Це меню не доступно на цьому сервері.",
+	"modalOnlyDeveloper": "Це модальне вікно тільки для розробників бота.",
+	"modalOnlyDevGuild": "Це модальне вікно не доступно на цьому сервері.",
+	"missingBotPermissions": "Мені не вистачає таких дозволів: {{permissions}}",
+	"missingUserPermissions": "Вам не вистачає таких дозволів: {{permissions}}",
+	"cooldown": "Вам треба зачекати <t:{{cooldown}}:R>, перед тим як знову використати це",
+	"error": "Сталась помилка `{{errorMessage}}`"
+}

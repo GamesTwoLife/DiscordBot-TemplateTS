@@ -1,0 +1,52 @@
+{
+	"samples": {
+		"sample": {
+			"name": "зразок",
+			"description": "Приклад команди з різними компонентами.",
+			"autocomplete": {
+				"description": "Приклад команди автозаповнення",
+				"options": {
+					"input": {
+						"description": "Оберіть варіант"
+					}
+				}
+			},
+			"button": {
+				"description": "Приклад команди з кнопками"
+			},
+			"menu": {
+				"description": "Приклад команди з меню"
+			},
+			"modal": {
+				"description": "Приклад команди з модальним вікном"
+			},
+			"pagination": {
+				"description": "Приклад пагінації.",
+				"pageStrings": [
+					"Котики найкращі :)",
+					"Песики найкращі :)",
+					"Україна понад усе!",
+					"Слава Україні! Героям Слава!",
+					"Крутий шаблон бота"
+				],
+				"footer": "Сторінка {{currentPage}}/{{totalPages}}"
+			},
+			"buttonwrapper": {
+				"description": "Приклад обгортки кнопок.",
+				"content": "Натискайте на кнопки знизу:",
+				"say_hello": "Натисни на мене",
+				"cool_template": "Найкращий шаблон Discord бота"
+			},
+			"info": {
+				"description": "Інформація про систему."
+			}
+		},
+		"message-sample": {
+			"name": "Зразок повідомлення"
+		},
+		"user-sample": {
+			"name": "Зразок користувача"
+		}
+	}
+}
+

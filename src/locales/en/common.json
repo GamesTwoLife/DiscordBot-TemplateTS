@@ -1,0 +1,18 @@
+{
+	"interactionError": "❌ Interaction Error",
+	"unknownInteraction": "This interaction is unknown or has ceased to exist.",
+	"expiredInteraction": "This interaction has expired. If necessary, call the associated command again.",
+	"buttonOnlyDeveloper": "This button is for bot developers only.",
+	"buttonOnlyDevGuild": "This button is not available on this server.",
+	"commandNoLongerExists": "This command no longer exists or a very unforeseen situation has arisen.",
+	"commandOnlyDeveloper": "This command is for bot developers only.",
+	"commandOnlyDevGuild": "This command is not available on this server.",
+	"menuOnlyDeveloper": "This menu is for bot developers only.",
+	"menuOnlyDevGuild": "This menu is not available on this server.",
+	"modalOnlyDeveloper": "This modal submit is for bot developers only.",
+	"modalOnlyDevGuild": "This modal submit is not available on this server.",
+	"missingBotPermissions": "I don't have enough of these permissions: {{permissions}}",
+	"missingUserPermissions": "You don't have enough of these permissions: {{permissions}}",
+	"cooldown": "You need to wait <t:{{cooldown}}:R> before using this again",
+	"error": "An error occurred `{{errorMessage}}`"
+}
