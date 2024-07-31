@@ -17,11 +17,12 @@ const UserSchema: Schema<IUser> = new Schema<IUser>({
 
 const UserModel = model('users', UserSchema)
 
-const findOrCreate = async (values: QueryOptions<IUser>) => {
-	const user = UserModel.findOne(values)
+const findOrCreate = async (values: UpdateQuery<IUser>) => {
+	let user = await UserModel.findOne(values)
 
-	if (user === null) {
-		return new UserModel(values).save().then((user) => user.toObject())
+	if (!user) {
+		user = new UserModel(values)
+		await user.save()
 	}
 
 	return user
@@ -33,7 +34,7 @@ const createUser = (values: Partial<IUser>) =>
 	new UserModel(values).save().then((user) => user.toObject())
 const deleteUser = (userID: string) => UserModel.findOneAndDelete({ userID })
 const updateUser = (userID: string, values: UpdateQuery<IUser>) =>
-	UserModel.findOneAndDelete({ userID }, values)
+	UserModel.findOneAndUpdate({ userID }, values, { upsert: true })
 
 export default {
 	UserModel,
