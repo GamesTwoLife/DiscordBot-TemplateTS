@@ -40,12 +40,12 @@ export default class EventHandler {
 						if (event.data.once) {
 							this.client.once(
 								event.data.name as keyof ClientEvents,
-								(...args) => event.execute(this.client, ...args)
+								(...args: any) => event.execute(this.client, ...args)
 							)
 						} else {
 							this.client.on(
 								event.data.name as keyof ClientEvents,
-								(...args) => event.execute(this.client, ...args)
+								(...args: any) => event.execute(this.client, ...args)
 							)
 						}
 					} else if (
@@ -57,12 +57,12 @@ export default class EventHandler {
 						if (event.data.once)
 							this.client.rest.once(
 								event.data.name as keyof RestEvents,
-								(...args) => event.execute(this.client, ...args)
+								(...args: any) => event.execute(this.client, ...args)
 							)
 						else
 							this.client.rest.on(
 								event.data.name as keyof RestEvents,
-								(...args) => event.execute(this.client, ...args)
+								(...args: any) => event.execute(this.client, ...args)
 							)
 					}
 				} catch (error) {
