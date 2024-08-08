@@ -42,6 +42,10 @@ export default class ComponentHandler {
 
 						const component = (await import(`${componentPath}`))
 							.default as Component<InteractionType>
+						
+						if (component && !component.options) {
+							component.options = this.client.config.defaultComponentOptions
+						}
 
 						if ('data' in component && 'execute' in component) {
 							switch (component.data.type) {

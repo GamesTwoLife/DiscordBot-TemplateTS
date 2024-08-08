@@ -40,6 +40,10 @@ export default class CommandHandler {
 
 					const command = (await import(`${commandPath}`))
 						.default as Command<InteractionType>
+						
+					if (command && !command.options) {
+						command.options = this.client.config.defaultCommandOptions
+					}
 
 					if ('data' in command && 'execute' in command) {
 						this.cache.set(command.data.name, command)

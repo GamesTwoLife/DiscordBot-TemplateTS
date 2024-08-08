@@ -331,11 +331,5 @@ export default new Command(
 				}
 				break
 		}
-	},
-	{
-		cooldown: 0,
-		ownerOnly: false,
-		devGuildOnly: true,
-		bot_permissions: ['ViewChannel', 'SendMessages'],
 	}
 )

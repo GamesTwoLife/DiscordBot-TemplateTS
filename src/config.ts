@@ -8,6 +8,9 @@ import {
 } from 'discord.js'
 import { version } from '../package.json'
 
+import { CommandOptions } from './types/Command'
+import { ComponentOptions } from './types/Component'
+
 const intents: GatewayIntentBits[] | number = [3247863 | (1 << 24) | (1 << 25)] // All Intents
 const partials: Array<Partials> = [
 	Partials.Channel,
@@ -47,6 +50,20 @@ export const config = {
 		warn: 0x22bb33,
 		error: 0xbb2124,
 	},
+	defaultCommandOptions: {
+		cooldown: 0,
+		ownerOnly: false,
+		devGuildOnly: true,
+		bot_permissions: [],
+		user_permissions: []
+	} as CommandOptions,
+	defaultComponentOptions: {
+		cooldown: 0,
+		ownerOnly: false,
+		devGuildOnly: true,
+		bot_permissions: [],
+		user_permissions: []
+	} as ComponentOptions,
 
 	intents: intents,
 	partials: partials,

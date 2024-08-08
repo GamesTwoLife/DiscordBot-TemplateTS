@@ -30,11 +30,5 @@ export default new Command(
 		return await interaction.reply({
 			content: `${targetId} => ${targetMember}/${targetUser}`,
 		})
-	},
-	{
-		cooldown: 0,
-		ownerOnly: false,
-		devGuildOnly: true,
-		bot_permissions: ['ViewChannel', 'SendMessages'],
 	}
 )

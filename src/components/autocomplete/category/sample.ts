@@ -29,9 +29,5 @@ export default new Autocomplete(
 		return await interaction.respond(
 			filtered.map((choice) => ({ name: choice, value: choice }))
 		)
-	},
-	{
-		ownerOnly: false,
-		devGuildOnly: false,
 	}
 )
